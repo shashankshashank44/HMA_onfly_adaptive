@@ -1340,24 +1340,12 @@ void Migration_controller::onfly_mig_print() {
 
     int64_t page_count = 0;
     int64_t total_unique = 0;
-    cout<<"page_details_start:\n";
-    for(pg = ptable; pg != NULL; pg = (struct req_page*)(pg->r_hh.next))
-    {
-        if(pg != NULL)
-        {
-            cout<<pg->hma_stat.total_count<<":";
-            total_unique += pg->hma_stat.unique_addr.size();                                                                                         
-            cout<<pg->hma_stat.unique_addr.size()<<"\n";
-        }
-        page_count++;
-    }
-    cout<<"Average unique addr access for each page:"<<total_unique/page_count<<"\n";
-    cout<<"page_details_end:\n";
+	
     cout << "Total no. of hot pages migrated " << hot_count << "\n";
     cout << "Total no. of cold pages migrated " << cold_count << "\n";
     cout << "Total Buffer hits "<< hma.onfly.total_buffer_hit_count<< "\n";
     cout << "Total l1m access "<< tot_l1m_access << " total l2m access " << tot_l2m_access << "\n";
-    cout << "Migrated HBM accesses:"<<migrated_hbm_access<<"\n";
+    /*cout << "Migrated HBM accesses:"<<migrated_hbm_access<<"\n";
     cout<<"Access to migration/migrations (MBQ):"<<migrated_hbm_access/hma.stats.pages_migrated<<"\n";    
     cout<<"Ratio:\n";
     int64_t mbq_total = 0;
@@ -1377,7 +1365,7 @@ void Migration_controller::onfly_mig_print() {
         cout<<remap_access_ratio[i]<<" ";
         tremap_access += remap_access_ratio[i];
     }
-    cout<<"average remap_mbq/window:"<<tremap_access/remap_access_ratio.size()<<"\n";
+    cout<<"average remap_mbq/window:"<<tremap_access/remap_access_ratio.size()<<"\n";*/
     cout<<"\n";
     return;
 }
