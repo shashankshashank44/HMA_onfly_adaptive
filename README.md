@@ -11,6 +11,6 @@ Getting Started:
 
   `git clone https://github.com/shashankshashank44/HMA_onfly_adaptive.git`\
   `make -j`\
-  `./run.sh`\
+  `./run.sh`
 
 This model has been only tested with HBM and PCM memory types.
