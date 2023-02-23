@@ -4,13 +4,13 @@ Page migration is one of the techniques to improve memory performance in Hybrid 
 
 This Hybrid memory model is built on top of Ramulator simulator (https://github.com/CMU-SAFARI/ramulator).
 
-Input Trace format (similar to Ramulator's CPU trace):
-'<num-cpuinst> <virtual_memory_address> <IP> <R or W>'
+Input Trace format (similar to Ramulator's CPU trace format):
+`<num-cpuinst> <memory_address> <IP> <1 for R or 2 for W>`
 
 Getting Started:
 
-'git clone https://github.com/shashankshashank44/HMA_onfly_adaptive.git
+`git clone https://github.com/shashankshashank44/HMA_onfly_adaptive.git
 make -j
-./run.sh'
+./run.sh`
 
 This model has been only tested with HBM and PCM memory types.
