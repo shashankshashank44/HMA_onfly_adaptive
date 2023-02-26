@@ -1,6 +1,6 @@
 # Page Migration in Heterogenous Memory Systems
 
-Page migration is one of the techniques to improve memory performance in Hybrid memory systems. More information on this work can be found at https://dl.acm.org/doi/10.1145/3364179
+Page migration is one of the techniques to improve memory performance in Hybrid memory systems. More information on this work can be found at https://dl.acm.org/doi/10.1145/3364179 and https://dl.acm.org/doi/fullHtml/10.1145/3444750
 
 This Hybrid memory model is built on top of Ramulator (https://github.com/CMU-SAFARI/ramulator).
 
